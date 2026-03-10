@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converso de valores</title>
+    <link rel="stylesheet" href="style.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <img class="img-topo" src="./assets/logo.gif" alt="logo topo">
+
+    <main>
+        <label class="label-top">
+            converter <b>de:</b>
+            <select>
+                <option> R$ real brasileiro</option>
+            </select>
+        </label>
+
+        <label class="label-top">
+            converter <b>para:</b>
+
+            <select class="select-options">
+                <option value="dolar"> US$ dólar americano</option>
+                <option value="euro"> € euro </option>
+                <option value="bitcoin"> ₿ Bitcoin</option>
+            </select>
+
+        </label>
+
+        <label class="label-top">
+            <b>valor:</b>
+            <input class="captador" placeholder="120.00">
+        </label>
+
+        <button class="aa">converter</button>
+       
+
+
+
+        <section>
+            <div class="end">
+                <img src="./assets/brasil 2.png">
+                <p class="coin">real</p>
+                <p class="coin-valor">r$ 0,00</p>
+            </div>
+
+            <img class="img-seta" src="./assets/seta.png">
+
+            <div class="end">
+                <img class="coin-img" src="./assets/estados-unidos (1) 1.png">
+                <p class="coin" id="coin-name">dólar americano </p>
+                <p class="coin-valor-dolar">US$ 0,00</p>
+            </div>
+
+
+        </section>
+
+    </main>
+
+</body>
+  <script src="./script.js"></script>
+
+
+</html>
