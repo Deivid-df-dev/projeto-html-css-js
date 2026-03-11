@@ -10,6 +10,7 @@ function converter() {
     const dolar = 5.20
     const euro = 6.05
     const bitcon = 358.00
+    const libra = 2.00
 
     if (selectOptions.value == "dolar") {
         coinvalordolar.innerHTML = new Intl.NumberFormat("en-US",
@@ -37,13 +38,21 @@ function converter() {
                 inputcaptador / bitcon)
     }
 
+    if (selectOptions.value == "libra") {
+        coinvalordolar.innerHTML = new Intl.NumberFormat("en-GB",
+            {
+                style: "currency",
+                currency: "GBP"
+            }).format(
+                inputcaptador / libra)
+
     coinvalor.innerHTML = new Intl.NumberFormat("PT-BR",
         {
             style: "currency",
             currency: "BRL"
         }).format(
             inputcaptador)
-}
+        }}
 
 function muda() {
     const coinname = document.getElementById("coin-name")
@@ -63,6 +72,11 @@ function muda() {
         coinname.innerHTML = "bitcoin"
         coinimg.src = "./assets/bitcoin.png"
     }
+
+      if (selectOptions.value == "libra") {
+        coinname.innerHTML = "libra esterlina"
+        coinimg.src = "https://github.com/Claudiorobmaia/conversordemoedas/blob/main/assets/libra.png?raw=true"
+      }
 
     converter()
 
